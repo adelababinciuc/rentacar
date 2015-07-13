@@ -8,7 +8,7 @@
 
         <!-- Connection settings -->
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/HibernateTest</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/rentacar</property>
         <property name="hibernate.connection.username">postgres</property>
         <property name="hibernate.connection.password">Himawari15</property>
 
@@ -22,8 +22,11 @@
         <property name="hibernate.hbm2ddl.auto">create-drop</property>
 
         <!-- Annotated entity classes -->
-        <mapping class="com.jvmhub.tutorial.entity.Student"/>
-        <mapping class="com.jvmhub.tutorial.entity.Grupa"/>
+        <mapping class="com.interni.rentcar.Booking"/>
+        <mapping class="com.interni.rentcar.Car"/>
+        <mapping class="com.interni.rentcar.Customer"/>
+        <mapping class="com.interni.rentcar.FamilyCar"/>
+        <mapping class="com.interni.rentcar.SportsCar"/>
 <!--         <mapping class="com.jvmhub.tutorial.entity.Beer"/> -->
         
     </session-factory>
