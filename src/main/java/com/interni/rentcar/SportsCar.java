@@ -1,6 +1,10 @@
 package com.interni.rentcar;
 
+import javax.persistence.Entity;
+
+@Entity
 public class SportsCar extends Car {
+	
 	private boolean sportsCarTurboBoost;
 
 	public SportsCar() {

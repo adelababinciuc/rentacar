@@ -1,19 +1,22 @@
 package com.interni.rentcar;
 
+import javax.persistence.Entity;
+
+@Entity
 public class FamilyCar extends Car{
 	
-	private boolean trailer;
+	private boolean familyCarTrailer;
 	
 	public FamilyCar(){
 		
 	}
 
-	public boolean isTrailer() {
-		return trailer;
+	public boolean isFamilyCarTrailer() {
+		return familyCarTrailer;
 	}
 
-	public void setTrailer(boolean trailer) {
-		this.trailer = trailer;
+	public void setFamilyCarTrailer(boolean familyCarTrailer) {
+		this.familyCarTrailer = familyCarTrailer;
 	}
 	
 	
